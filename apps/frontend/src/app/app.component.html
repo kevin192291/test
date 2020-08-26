@@ -1,8 +1,16 @@
-<div style="text-align: center;">
-  <h1>Welcome to frontend!</h1>
-  <img
-    width="450"
-    src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png"
-  />
-</div>
-<div>Message: {{ hello$ | async | json }}</div>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Trip Price Calc App</span>
+    <button mat-icon-button color="warn" routerLink="/">
+      <mat-icon>home</mat-icon>
+    </button>
+    <button mat-icon-button color="warn" routerLink="add">
+      <mat-icon>add</mat-icon>
+    </button>
+    <button mat-icon-button color="warn" routerLink="edit">
+      <mat-icon>edit</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

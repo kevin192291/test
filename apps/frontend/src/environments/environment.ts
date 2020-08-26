@@ -4,6 +4,8 @@
 
 export const environment = {
   production: false,
+  payments: 'http://localhost:3000/api/payments',
+  users: 'http://localhost:3000/api/users',
 };
 
 /*

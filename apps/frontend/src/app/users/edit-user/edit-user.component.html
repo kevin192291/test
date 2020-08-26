@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let user of allUsers">
+        {{user.name}} - <button mat-raised-button (click)="selectedUser(user)">Select</button>
+    </li>
+</ul>

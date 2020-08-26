@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="column" *ngIf="ower">
+    <h2>{{ ower.name }}'s expenses:</h2>
+    <ul>
+      <li *ngFor="let money of ower.expense">{{ money | currency }}</li>
+    </ul>
+  </div>
+  <div class="column" *ngIf="owed">
+    <h2>{{ owed.name }}'s expenses:</h2>
+    <ul>
+      <li *ngFor="let money of owed.expense">{{ money | currency }}</li>
+    </ul>
+  </div>
+</div>
